@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100vh; */
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(240, 225, 255);
+    font-size: large;
+}
+
+.header {
+    display: flex;
+    height: 100px;
+    border: 2px solid rgb(4, 0, 109);
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+
+.js {
+    background-color: rgb(255, 255, 0);
+    width: 100px;
+    /* height: 100px;  */
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.js-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 10px 10px 0;
+}
+
+.title {
+    background-color: rgb(0, 0, 255);
+    color: white;
+    width: 100%;
+    padding: 20px 0 0 40px;
+    font-size: 50px;
+}
+
+.score {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+
+    /* justify-content: space-evenly; */
+}
+
+.ply, .comp {
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+
+.ply {
+    background-color: blue;
+}
+
+.comp {
+    background-color: red;
+}
+
+.text {
+    width: 100%;
+    margin: 50px 0 60px;
+    text-align: center;
+    font-size: 40px;
+    color: navy;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 150px;
+}
+
+#rock, #paper, #scissors {
+    border: 7px solid blue;
+    /* border-radius: 50%; */
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    border: 7px solid yellow;
+}
+
+#rock:active, #paper:active, #scissors:active {
+    border: 7px solid red;
+}
+
+.footer {
+    color: white;
+    background-color: blue;
+    border: 2px solid rgb(4, 0, 109);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: left;
+    padding: 10px 0px 10px 25px;
+}
+
+button {
+    background-color: rgb(240, 248, 255);
+    border: 1px solid navy;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: navy;
+    font-size: large;
+}
+
+button:active {
+    background-color: rgb(230, 230, 255)
+}
+
+.winner {
+    transition: 2s;
+    width: 100%;
+    scale: 1.2;
+}
